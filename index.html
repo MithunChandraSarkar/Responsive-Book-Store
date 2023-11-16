@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রজেক্ট ওয়েব টেকনলোজি</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> বইবিতান </a>
+
+        <form action="search_result.php" class="search-form">
+            <label for="search"></label>
+            <input type="text" name="search" placeholder="বইয়ের নাম/লেখক দিয়ে সার্চ করুন" id="search-box" required>
+            <label for="search"><button style="color: green;" class="fas fa-search" type="submit"></button></label>
+
+
+            
+
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">হোম</a>
+            <a href="#featured">ফিচার্ড</a>
+            <a href="#arrivals">এরাইভালস</a>
+            <a href="#reviews">রিভিউস</a>
+            <a href="#blogs">ব্লগস</a>
+        </nav>
+    </div>
+
+</header>
+
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="admin_login.php" method="post">
+        <h3>এডমিন লগ ইন</h3>
+        <label for="username"><span>ইউজার নেম</span></label>
+        <input type="name" name="username" class="box" placeholder="ইউজার নেম" id="" required>
+
+        <label for="password"><span>পাসওয়ার্ড</span></label>
+        <input type="password" name="password" class="box" placeholder="পাসওয়ার্ড দিন" id="" required>
+
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> মনে রাখুন</label>
+        </div>
+
+        <input type="submit" value="Login" class="btn">
+
+        <p>পাসওয়ার্ড ভুলে গেছেন ? <a href="#">এখানে ক্লিক করুন</a></p>
+        <p>কোনো একাউন্ট নেই ? <a href="#">একাউন্ট খুলুন</a></p>
+    </form>
+</div>
+
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>সর্বোচ্চ ৭৫% ছাড়</h3>
+            <p>বই একটি জাদুঘর, যেখানে আপনি নানান দেশে বিভিন্ন চোখ ও দৃষ্টি দ্বারা পুরো নতুন বিশ্ব সম্প্রসারণ করতে পারেন। বই একটি অদৃশ্য বন্ধন, যেখানে লেখকের চিন্তা ও বুদ্ধি গ্রহণ করে পাঠকের জীবনে নতুন পরিবর্তন আনতে সাহায্য করে।</p>
+            <a href="#" class="btn">এখনই কিনুন</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/book-1.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-2.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-3.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-4.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-5.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-6.jpg" alt=""></a>
+            </div>
+            <img src="image/stand.png" class="stand" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>বিনামূল্যে পরিবহন</h3>
+            <p>৫০০ টাকার বেশি অর্ডার করুন</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>নিরাপদ পেমেন্ট</h3>
+            <p>১০০% নিরাপদ পেমেন্ট</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>সহজ ফেরতযোগ্যতা</h3>
+            <p>১০ দিনে ফেরত সুযোগ</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>২৪/৭ সহযোগিতা</h3>
+            <p>যেকোনো সময় কল করুন</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>ফিচার্ড বইসমুহ</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">২০০টাকা <span>৫০০ টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">২০০টাকা <span>৫০০টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">২০০টাকা <span>৫০০টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">২০০টাকা <span>৫০০টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">২০০টাকা <span>৫০০টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">২০০টাকা <span>৫০০টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">২০০টাকা <span>৫০০টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">২০০টাকা <span>৫০০টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>ফিচার্ড বইসমুহ</h3>
+                    <div class="price">২০০টাকা <span>৫০০টাকা</span></div>
+                    <a href="#" class="btn">কার্ড পেমেন্ট</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>নতুন আপডেট পেতে সাবস্ক্রাইব করুন</h3>
+        <input type="email" name="" placeholder="আপনার ইমেইল লিখুন" id="" class="box">
+        <input type="submit" value="সাবস্ক্রাইব" class="btn">
+    </form>
+
+</section>
+
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>নতুন আগমন</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>নতুন আগমন</h3>
+                    <div class="price">৩০০টাকা <span>৬০০টাকা</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="deal">
+
+    <div class="content">
+        <h3>দিনের সেরা চুক্তি</h3>
+        <h1>সর্বোচ্চ ৫০% ছাড়ে</h1>
+        <p>বই একটি জাদুঘর, যেখানে আপনি নানান দেশে বিভিন্ন চোখ ও দৃষ্টি দ্বারা পুরো নতুন বিশ্ব সম্প্রসারণ করতে পারেন। বই একটি অদৃশ্য বন্ধন, যেখানে লেখকের চিন্তা ও বুদ্ধি গ্রহণ করে পাঠকের জীবনে নতুন পরিবর্তন আনতে সাহায্য করে। নিম্নলিখিত কিছু কথা বই নিয়ে:
+
+           ১.জ্ঞানের উৎস: বই সম্প্রসারণের মাধ্যমে আপনি নতুন জ্ঞান অর্জন করতে পারেন। সেই নতুন জ্ঞান আপনার চিন্তা ও পরিস্থিতি বৃদ্ধি করতে সাহায্য করতে পারে।
+            
+           ২.চিন্তা এবং বিচার: প্রতিটি বই একটি বিশেষ ভাষা ও আদর্শগুলির মাধ্যমে পাঠকের চিন্তা এবং বিচারের দিক নিবোচন করতে সাহায্য করতে পারে।
+            </p>
+        <a href="#" class="btn">এখনই কিনুন</a>
+    </div>
+
+    <div class="image">
+        <img src="image/deal-img.jpg" alt="">
+    </div>
+
+</section>
+
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>কাস্টমার রিভিউ</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.jpg" alt="">
+                <h3>মিঠুন চন্দ্র সরকার </h3>
+                <p>বই একটি জাদুঘর, যেখানে আপনি নানান দেশে বিভিন্ন চোখ ও দৃষ্টি দ্বারা পুরো নতুন বিশ্ব সম্প্রসারণ করতে পারেন। বই একটি অদৃশ্য বন্ধন, যেখানে লেখকের চিন্তা ও বুদ্ধি গ্রহণ করে পাঠকের জীবনে নতুন পরিবর্তন আনতে সাহায্য করে।</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.jpg" alt="">
+                <h3>মো: রাজু মিয়া</h3>
+                <p>জ্ঞানের উৎস: বই সম্প্রসারণের মাধ্যমে আপনি নতুন জ্ঞান অর্জন করতে পারেন। সেই নতুন জ্ঞান আপনার চিন্তা ও পরিস্থিতি বৃদ্ধি করতে সাহায্য করতে পারে।</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.jpg" alt="">
+                <h3>জান্নাতুন নুর ইতু</h3>
+                <p>চিন্তা এবং বিচার: প্রতিটি বই একটি বিশেষ ভাষা ও আদর্শগুলির মাধ্যমে পাঠকের চিন্তা এবং বিচারের দিক নিবোচন করতে সাহায্য করতে পারে।</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>আমাদের ব্লগস সমুহ</span> </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ব্লগ টাইটেল</h3>
+                    <p>বই একটি জাদুঘর, যেখানে আপনি নানান দেশে বিভিন্ন চোখ ও দৃষ্টি দ্বারা পুরো নতুন বিশ্ব সম্প্রসারণ করতে পারেন। বই একটি অদৃশ্য বন্ধন, যেখানে লেখকের চিন্তা ও বুদ্ধি গ্রহণ করে পাঠকের জীবনে নতুন পরিবর্তন আনতে সাহায্য করে।</p>
+                    <a href="#" class="btn">আরো পড়ুন</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ব্লগ টাইটেল</h3>
+                    <p>বই একটি জাদুঘর, যেখানে আপনি নানান দেশে বিভিন্ন চোখ ও দৃষ্টি দ্বারা পুরো নতুন বিশ্ব সম্প্রসারণ করতে পারেন। বই একটি অদৃশ্য বন্ধন, যেখানে লেখকের চিন্তা ও বুদ্ধি গ্রহণ করে পাঠকের জীবনে নতুন পরিবর্তন আনতে সাহায্য করে।</p>
+                    <a href="#" class="btn">আরো পড়ুন</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ব্লগ টাইটেল</h3>
+                    <p>বই একটি জাদুঘর, যেখানে আপনি নানান দেশে বিভিন্ন চোখ ও দৃষ্টি দ্বারা পুরো নতুন বিশ্ব সম্প্রসারণ করতে পারেন। বই একটি অদৃশ্য বন্ধন, যেখানে লেখকের চিন্তা ও বুদ্ধি গ্রহণ করে পাঠকের জীবনে নতুন পরিবর্তন আনতে সাহায্য করে।</p>
+                    <a href="#" class="btn">আরো পড়ুন</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ব্লগ টাইটেল</h3>
+                    <p>বই একটি জাদুঘর, যেখানে আপনি নানান দেশে বিভিন্ন চোখ ও দৃষ্টি দ্বারা পুরো নতুন বিশ্ব সম্প্রসারণ করতে পারেন। বই একটি অদৃশ্য বন্ধন, যেখানে লেখকের চিন্তা ও বুদ্ধি গ্রহণ করে পাঠকের জীবনে নতুন পরিবর্তন আনতে সাহায্য করে।</p>
+                    <a href="#" class="btn">আরো পড়ুন</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ব্লগ টাইটেল</h3>
+                    <p>বই একটি জাদুঘর, যেখানে আপনি নানান দেশে বিভিন্ন চোখ ও দৃষ্টি দ্বারা পুরো নতুন বিশ্ব সম্প্রসারণ করতে পারেন। বই একটি অদৃশ্য বন্ধন, যেখানে লেখকের চিন্তা ও বুদ্ধি গ্রহণ করে পাঠকের জীবনে নতুন পরিবর্তন আনতে সাহায্য করে।</p>
+                    <a href="#" class="btn">আরো পড়ুন</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>আমাদের ঠিকানা</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> বাংলাদেশ, ঢাকা, চকবাজার-১২০২ </a>
+        </div>
+
+        <div class="box">
+            <h3>লিঙ্ক সমুহ</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> হোম </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> ফিচার্ড</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>এরাইভালস </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> রিভিউস </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> ব্লগস </a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> একাউন্ট ইনফরমেশন </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> অর্ডার আইটেম </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> প্রাইভেসি পলেসি </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> পেমেন্ট মেথড </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> আমাদের সার্ভিস </a>
+        </div>
+
+        <div class="box">
+            <h3>কন্টাক্ট নাম্বার</h3>
+            <a href="#"> <i class="fas fa-phone"></i> 01751843119 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> raju@gmail.com </a>
+            <img src="image/worldmap.png" class="map" alt="">
+        </div>
+        
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit"> নির্মানে <span>মি. রাজু</span></div>
+
+</section>
+
+
+<div class="loader-container">
+    <img src="image/loader-img.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
